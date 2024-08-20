@@ -1,0 +1,222 @@
+* {margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;}
+
+body {background: #000;}
+
+
+.header {width: 100%;
+         height: 80px;
+         background: #11101b;
+         border: 2px double #e812be;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 0 100px;
+      }
+
+.hamburger {display: none;}
+.nav-bar ul {display: flex;}
+.nav-bar, .active, .a__nav, ul, li  {display: block;
+                                color: #fff;
+                                font-size: 20px;
+                                padding: 10px 25px;
+                                margin: 0 5px;
+                                text-decoration: none;}
+.active {background: #000;
+         border-radius: 50px;
+         font-family: 'Edu NSW ACT Foundation', cursive;}
+
+.a__nav {font-family: 'Edu NSW ACT Foundation', cursive;}
+.a__logo {color:#fff;
+         font-size: 33px;
+         font-family:'Delicious Handrawn', cursive;
+         text-decoration:none;
+         margin:20px;}
+
+.footer {user-select: none;}
+
+.a__footer {text-decoration:none;
+            color: #fff;
+            font-size:18px;
+            padding:10px ;
+            font-family: 'Edu NSW ACT Foundation', cursive;}
+
+.i__footer {color:#fff;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            font-size: 18px;
+            padding: 10px;
+            }
+
+.p__footer {font-family:'Delicious Handrawn', cursive;
+            font-size: 25px;
+            color: #fff;
+            text-align: center;
+            margin: 50px;
+            border-style: solid;
+            border-width:2px;} 
+
+.a__logo:hover {color:#e812be;}
+
+.title {text-align: center;
+        padding-bottom:20px;
+        font-size: 30px;
+        color: #fff;
+        user-select: none;
+        }
+.active:hover {border-radius: 50px;}
+.a__nav:hover {color:#e812be;
+               background: #000;
+               border-radius: 50px;}
+.a__footer:hover {color:#e812be;}
+
+
+@media only screen and (max-width: 1320px) {
+   header {padding: 0 30px;}
+}
+
+@media only screen and (max-width: 1200px) {
+   .hamburger {display: block;
+               cursor: pointer;}
+   
+   .hamburger .line {width: 50px;
+                     height: 10px;
+                     background: #fff;
+                     margin: 6px 0;}
+
+   .nav-bar {height: 0px;
+             position: absolute;
+             top: 80px;
+             left: 0p;
+             right: 0;
+             width: 100vw;
+             background: #11101b;
+             transition-duration: 0.3s;
+             overflow: hidden;}
+
+   .nav-bar.active {height: 600px;}
+   .nav-bar ul {display: block;
+               width: fit-content;
+               margin: 80px auto 0 auto;
+               text-align: center;
+               transition: 0.5s;
+               opacity: 0;}
+   .nav-bar.active ul {opacity: 1;}
+
+   .nav-bar ul li .a__nav .active {margin-bottom: 12px;}
+
+    .p__footer {font-size: 40px;
+               padding: 25px;}
+      .i__footer {font-size: 15px;
+                   padding: 5px;} 
+      .a__footer {font-size: 25px;
+                  padding: 10px;}
+      .a__nav {font-size: 35px;}
+      .active {font-size: 35px;}
+      .a__logo {font-size: 40px;}
+
+}
+
+@media only screen and (max-width: 900px) {
+   .hamburger {display: block;
+               cursor: pointer;}
+
+   .hamburger .line {width: 30px;
+                     height: 3px;
+                     background: #fff;
+                     margin: 6px 0;}
+
+   .nav-bar {height: 0px;
+             position: absolute;
+             top: 80px;
+             left: 0p;
+             right: 0;
+             width: 100vw;
+             background: #11101b;
+             transition-duration: 0.3s;
+             overflow: hidden;}
+
+   .nav-bar.active {height: 450px;}
+   .nav-bar ul {display: block;
+               width: fit-content;
+               margin: 80px auto 0 auto;
+               text-align: center;
+               transition: 0.5s;
+               opacity: 0;}
+   .nav-bar.active ul {opacity: 1;}
+
+   .nav-bar ul li .a__nav .active {margin-bottom: 12px;}
+
+   .p__footer {font-size: 30px;
+               padding: 20px;}
+      .i__footer {font-size: 10px;
+                   padding: 5px;} 
+      .a__footer {font-size: 20px;
+                  padding: 10px;}
+         .a__nav {font-size: 45px;}
+         .active {font-size: 45px;}
+         .a__logo {font-size: 60px;}
+         
+}
+
+
+.title {font-size: 50px;
+        color: #fff;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: solid #e812be 2px;}
+
+.article {margin: auto;
+          margin-top: 30px;
+          background-color: #11101b;
+          border: 2px solid #e812be;
+          width: 50%;
+          height: 30vh;
+          padding: 20px;
+          user-select: none;
+          float: left;}
+
+.img__info {width: 430px;
+            padding:20px;
+            float: left;
+            margin-right: 30px;
+            }
+
+.h2__info {font-size: 30px;
+           margin-bottom: 10px;
+           color: #fff;}
+
+.i__info {font-size:17px;
+          color: #fff;
+          font-family: cursive;}
+
+
+.article2 {margin: auto;
+          margin-top: 30px;
+          background-color: #11101b;
+          border: 2px solid #e812be;
+          width: 50%;
+          padding: 19px;
+          user-select: none;
+          float: right;
+          height: 30vh;}
+
+.img__dude {width: 283px;
+            padding:5px;
+            float: left;
+            margin-right: 20px;
+            }
+
+.h2__dude {font-size: 30px;
+           margin-bottom: 10px;
+           color: #fff;}
+
+.i__dude {font-size:17px;
+          color: #fff;
+          font-family: cursive;}
+
+.container {margin-bottom: 1000px;}
+
