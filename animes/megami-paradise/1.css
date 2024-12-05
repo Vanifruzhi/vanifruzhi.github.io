@@ -131,6 +131,10 @@ body {background: #000;}
              margin: auto;
              margin-bottom: 30px;}
 
+.mediafire__img {display: block;
+             margin: auto;
+             margin-bottom: 30px;}
+
 
 .online__img {display: block;
               margin: auto;
@@ -161,6 +165,9 @@ body {background: #000;}
 
 .drive__img:hover {border: 2px solid #e812be;
                      }
+
+.mediafire__img:hover {border: 2px solid #e812be;}
+
 
 .title:hover {color: #e812be;}
 
