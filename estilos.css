@@ -599,3 +599,19 @@ body {
 
 
 
+
+/* --- CAJA DE COMENTARIOS DISQUS --- */
+#disqus_thread {
+    background-color: #111; 
+    padding: 20px;          
+    border-radius: 15px;    
+    border: 2px solid #e812be; 
+    box-shadow: 0 0 15px rgba(232, 18, 190, 0.2); 
+    margin-top: 50px;       
+    width: 90%;             
+    max-width: 800px;       
+    margin-left: auto;      
+    margin-right: auto;     
+}
+
+
