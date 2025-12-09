@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    
+} 
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    border-bottom: 2px double #e812be;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.a__logo {
+    color: #fff;
+    font-size: 33px;
+    font-family: 'Delicious Handrawn', cursive;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.a__logo:hover {
+    color: #e812be;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 25px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-bar a:hover {
+    color: #e812be;
+    background: #000;
+}
+
+
+
+#busqueda {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid #333;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+#busqueda:focus {
+    border-color: #e812be;
+    outline: none;
+    box-shadow: 0 0 10px rgba(232, 18, 190, 0.5);
+}
+
+
+#resultados {
+    display: none;
+    position: absolute;
+    top: 85%;
+    right: 4%;
+    background-color: #11101b;
+    
+    width: 350px !important; 
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #e812be;
+    border-radius: 10px;
+    z-index: 2000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+    text-align: left;
+}
+
+
+#resultados a {
+    
+    display: flex !important; 
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 10px !important;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden; 
+}
+
+#resultados a:hover {
+    background-color: rgba(232, 18, 190, 0.15);
+}
+
+
+#resultados a span, 
+#resultados a { 
+    font-size: 18px !important; 
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+#resultados img {
+    
+    width: 80px !important;   
+    height: 110px !important; 
+    min-width: 80px !important; 
+    object-fit: cover !important;
+    border-radius: 5px !important;
+    margin-right: 15px !important;
+    border: 2px solid #555;
+    
+    
+    transition: transform 0.3s ease, border-color 0.3s !important;
+    transform-origin: center;
+}
+
+
+#resultados a:hover img {
+    transform: scale(1.15) !important; 
+    border-color: #e812be !important;
+}
+
+
+#resultados div, #resultados p {
+    color: #fff !important;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.main-content {
+    padding: 0 4%; 
+    flex-grow: 1; 
+}
+
+.title {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 30px;
+    color: #fff;
+    user-select: none;
+}
+.title:hover {
+    color: #e812be;
+}
+
+.portada__img, .sinopsis__img, .ficha-tecnica__img, .capturas__img, .descargas__img, .online__img {
+    display: block;
+    margin: 0 auto 20px auto; 
+    max-width: 100%; 
+    height: auto;
+}
+
+.portada__img {
+    border: 2px solid #e812be;
+    border-radius: 8px; 
+}
+
+.sinopsis__p {
+    color: #fff;
+    font-family: 'Volkhov', serif;
+    text-align: center;
+    font-size: 20px; 
+    margin-bottom: 40px; 
+    user-select: none;
+    line-height: 1.6; 
+}
+
+
+
+.frames__img {display: block;
+              margin: auto;
+              margin-bottom:20px;
+              border:2px solid #e812be;
+              width:1280px; 
+              height:720px;}
+
+
+.mega__img, .drive__img, .mediafire__img, .terabox__img {
+    display: block;
+    margin: 0 auto 30px auto;
+    transition: transform 0.2s ease;
+}
+.mega__img:hover, .drive__img:hover, .mediafire__img:hover, .terabox__img:hover {
+    transform: scale(1.05); 
+}
+
+.option__h4, .chapter__h4, .one-part, .second-part {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0;
+    user-select: none;
+}
+.one-part, .second-part {
+    background: #e812be;
+    padding: 10px;
+    border-radius: 8px;
+}
+.chapter__h4:hover {
+    color: #e812be;
+}
+
+.content {
+    display: block;
+    width: 100%; 
+    max-width: 1280px; 
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    margin: 0 auto 20px auto;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+.content:hover {
+    border-color: #e812be;
+}
+
+
+.footer {
+    padding: 2rem 5%;
+    text-align: center;
+    background-color: #11101b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 25px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.footer a, .footer i {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #e812be;
+}
+.p__footer {
+    width: 100%;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .header { flex-direction: column; gap: 15px; padding: 15px; }
+    .logo-container { align-items: center; }
+    .nav-bar { width: 100%; }
+    .nav-bar ul { flex-wrap: wrap; justify-content: center; }
+    #busqueda { width: 90%; margin-bottom: 5px; }
+}
+
+
+
+.ficha-tecnica__div {
+    border: 2px dashed #e812be; 
+    background-color: #000; 
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 0 15px rgba(232, 18, 190, 0.15); 
+}
+
+
+.ficha-tecnica__p b {
+    color: #e8e8e8; 
+}
+
+
+
+
+
+
+.header {
+    width: 100%;
+    height: auto; 
+    min-height: 80px;
+    background: #11101b;
+    border-bottom: 2px double #e812be;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.nav-bar ul { display: flex; gap: 5px; }
+
+.nav-bar a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: #e812be;
+    background: #000;
+}
+
+.ficha-tecnica__div {
+    border: 1px dashed #e812be; background-color: rgba(17, 16, 27, 0.5);
+    padding: 20px; border-radius: 10px; max-width: 800px; margin: 0 auto 40px auto;
+}
+
+.ficha-tecnica__p {
+    color: #fff; font-family: 'Volkhov', serif; font-size: 18px;
+    padding: 8px; border-bottom: 1px solid #333;
+    user-select: none;
+}
+.ficha-tecnica__p:last-child { border-bottom: none; }
+
+
+
+@media (max-width: 768px) {
+    .logo-container { align-items: center; } 
+    .slogan { font-size: 12px; }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    
+    .header {
+        height: auto !important; 
+        min-height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 15px 0 20px 0 !important; 
+    }
+
+    
+    .nav-bar {
+        width: 100% !important;
+        margin: 10px 0 !important;
+        display: block !important;
+    }
+
+    
+    .nav-bar ul {
+        display: flex !important;
+        flex-wrap: wrap !important; 
+        justify-content: center !important;
+        gap: 10px !important; 
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    
+    .nav-bar a {
+        font-size: 16px !important;
+        padding: 8px 16px !important;
+        display: inline-block !important;
+        margin-bottom: 5px !important; 
+    }
+
+    
+    #busqueda {
+        width: 85% !important;
+        margin-top: 10px !important;
+        display: block !important;
+    }
+    
+    
+    .logo-container {
+        align-items: center !important;
+        margin-bottom: 5px !important;
+    }
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin: 10px 0;
+    width: 100%;
+}
+
+.social-icons a i {
+    font-size: 28px; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.social-icons a:hover i {
+    color: #e812be;
+    transform: scale(1.3); 
+    text-shadow: 0 0 10px #e812be; 
+}
+
+
+.p__footer {
+    width: 100%;
+    font-family: 'Edu NSW ACT Foundation', cursive; 
+    font-size: 14px; 
+    color: #666; 
+    text-align: center;
+    padding: 10px;
+    border: none; 
+    margin-bottom: 10px;
+    opacity: 0.7; 
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.slogan {
+    color: #bbb;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 14px;
+    margin-top: 5px; 
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+@media (max-width: 768px) {
+    
+    
+    .header {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 15px 10px !important;
+        gap: 15px !important;
+    }
+    .logo-container { align-items: center !important; }
+    .nav-bar ul { flex-wrap: wrap !important; justify-content: center !important; gap: 8px !important; }
+    #busqueda { width: 90% !important; margin-bottom: 10px; }
+    #resultados { width: 94% !important; left: 3%; right: 3%; top: 100%; }
+
+    
+    .portada__img, 
+    .ficha-tecnica__img, 
+    .capturas__img, 
+    .descargas__img, 
+    .frames__img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        padding: 0 10px; 
+    }
+
+    
+    .sinopsis__p {
+        font-size: 16px !important;      
+        padding: 0 20px !important;      
+        line-height: 1.6 !important;     
+        text-align: center !important;   
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    
+    .sinopsis__img {
+        max-width: 250px !important; 
+        margin: 0 auto 15px auto !important;
+    }
+
+
+    
+    
+    .download__div {
+        display: flex !important;
+        flex-wrap: wrap !important;      
+        justify-content: center !important; 
+        gap: 10px !important;            
+    }
+
+    
+    .download__a {
+        display: inline-block !important;
+        margin: 0 !important;
+        width: auto !important;
+    }
+
+    
+    .mega__img, .drive__img, .mediafire__img, .terabox__img {
+        width: 90px !important;       
+        max-width: 90px !important;
+        height: auto !important;
+        margin: 0 !important;
+        display: block !important;
+        box-shadow: none !important;
+    }
+
+    
+    .ficha-tecnica__div {
+        width: 90% !important;
+        margin: 0 auto 30px auto !important;
+        padding: 15px !important;
+    }
+    .ficha-tecnica__p {
+        font-size: 15px !important;
+        word-wrap: break-word;
+    }
+}
+
+
+
+
+.download__a {
+    display: inline-flex !important; 
+    align-items: center;
+    justify-content: center;
+    background: rgba(20, 20, 20, 0.8); 
+    border: 2px solid #333;            
+    border-radius: 12px;               
+    padding: 15px 25px;                
+    margin: 10px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.download__a:hover {
+    border-color: #e812be;             
+    background: rgba(232, 18, 190, 0.1); 
+    transform: translateY(-5px);       
+    box-shadow: 0 5px 15px rgba(232, 18, 190, 0.4); 
+}
+
+
+.mega__img, .drive__img, .mediafire__img, .terabox__img {
+    width: auto !important;
+    height: 40px !important; 
+    object-fit: contain;
+    margin: 0 !important;
+    filter: drop-shadow(0 0 2px rgba(255,255,255,0.3)); 
+}
+
+
+
+.one-part, .second-part {
+    background: linear-gradient(90deg, #2a0a25 0%, #e812be 50%, #2a0a25 100%); 
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 50px; 
+    border: 1px solid #ff66e0; 
+    margin: 40px auto 20px auto;
+    max-width: 800px; 
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+    box-shadow: 0 0 15px rgba(232, 18, 190, 0.3);
+    letter-spacing: 1px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+
+

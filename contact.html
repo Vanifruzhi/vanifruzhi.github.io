@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e812be"> <title>Contacto y Reportes (Links Caídos / Peticiones) - Vanifruzhi</title>
+
+    <meta name="description" content="Centro de contacto de Vanifruzhi Fansub. Reporta enlaces caídos de Mega/Drive, realiza peticiones de animes retro o envía sugerencias directamente a la administración.">
+
+    <meta name="keywords" content="contacto vanifruzhi, reportar link caido, resubida anime, peticiones anime retro, fansub email, vanifruzhi soporte, enlaces rotos">
+
+    <meta name="author" content="Vanifruzhi Fansub">
+    <meta name="robots" content="index, follow"> <meta property="og:title" content="📬 Buzón de Vanifruzhi - Reportes y Peticiones">
+    <meta property="og:description" content="¿Enlace caído? ¿Sugerencia? ¿Un saludo? Escríbeme directo a la central.">
+    <meta property="og:image" content="https://pbs.twimg.com/media/GbjBX_eXoAAPLHI?format=jpg&name=large"> 
+    <meta property="og:url" content="https://vanifruzhi.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="vfz.ico">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@600&family=Nunito:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+ 
+<body> 
+    <header class="header">   
+       <div class="logo-container"> <a class="a__logo" href="index.html">Vanifruzhi</a>
+        <p class="slogan">La Gran Biblioteca de la Animación Olvidada</p>
+    </div>
+
+   
+    
+
+
+      <nav class="nav-bar">
+         <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a class="a__nav" href="00S.html">Animes del fansub</a></li>
+            <li><a class="a__nav" href="repert.html">Repertorio</a></li>
+            <li><a class="a__nav" href="raws.html">Raws</a></li>
+            <li><a class="a__nav" href="construccion.html">Hentai</a></li>
+         </ul>          
+      </nav>
+      <input type="text" id="busqueda" placeholder="Buscar..." />
+      <div id="resultados"></div>
+    </header>
+
+
+
+
+            <div class="container-contact">
+        <h1 class="title-contact">📬 Buzón de Vanifruzhi</h1>
+        
+        <div class="contact-wrapper">
+            <div class="contact-image">
+                <img src="https://pbs.twimg.com/media/GbjBX_eXoAAPLHI?format=jpg&name=large" alt="Torako Koshi">
+            </div>
+
+            <form class="contact-form" name="contacto-vanifruzhi" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contacto-vanifruzhi">
+
+                <p class="form-intro">
+                    ¿Enlace caído? ¿Sugerencia? ¿O simplemente quieres saludar? <br>
+                    Escríbeme aquí y me llegará directo a la central. 🚀
+                </p>
+
+                <div class="input-group">
+                    <label>Tu Nombre (o Apodo):</label>
+                    <input type="text" name="nombre" placeholder="Ej: VanifruzhiFan" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Tu Email (Opcional, para responderte):</label>
+                    <input type="email" name="email" placeholder="nombre@ejemplo.com">
+                </div>
+
+                <div class="input-group">
+                    <label>Mensaje:</label>
+                    <textarea name="mensaje" rows="5" placeholder="Escribe aquí tu reporte o saludo..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">ENVIAR MENSAJE ✨</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <p class="p__footer">Ningún video se encuentra alojado en nuestros servidores. Todos los vídeos enlazados son tomados de internet, enlaces y sitios webs gratuitos.</p>
+
+
+<div class="social-icons">
+        <a class="a__footer footer__link" href="https://www.facebook.com/profile.php?id=61560876430026" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="a__footer footer__link" href="https://twitter.com/vanifruzhi" target="_blank" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i> </a>
+        <a class="a__footer footer__link" href="https://www.youtube.com/@watafruzhi" target="_blank" aria-label="Youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a class="a__footer footer__link" href="contact.html" target="_blank" aria-label="Contacto">
+            <i class="fa-solid fa-envelope-open-text"></i> </a>
+    </div>
+                <a class="a__footer" href="dattes.html">Acerca de Vanifruzhi</a> 
+
+<i class="i__footer">
+    ©2019 - <span id="year"></span> Copyright: Vanifruzhi (v5.0)
+</i>
+
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+
+    <script src="js/animes.js"></script> 
+
+   <script src="js/main.js" defer></script>
+
+
+
+ </body> 
+</html>

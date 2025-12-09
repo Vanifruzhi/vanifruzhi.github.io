@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e812be"> <title>Lista de Animes Retro y Olvidados [Sub Español] - Vanifruzhi</title>
+    
+    <meta name="description" content="Explora la biblioteca de Vanifruzhi: Más de 130 animes clásicos, joyas ocultas, OVAs de los 80s y 90s, Raws y Hentai. Todo subtitulado al español y por descarga directa.">
+    
+    <meta name="keywords" content="lista animes retro, descargar anime 90s, anime sub español, vanifruzhi repertorio, animes olvidados, descarga mega drive, ova 80s">
+    
+    <meta name="author" content="Vanifruzhi Fansub">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="El Repertorio de Vanifruzhi - +130 Animes Retro">
+    <meta property="og:description" content="¿Buscas algo diferente? Entra a la Gran Biblioteca de la Animación Olvidada. Shonen, Seinen, Shojo y más.">
+    <meta property="og:image" content="https://pbs.twimg.com/media/Gbt9SQWWsBwRYpL?format=jpg&name=large"> <meta property="og:url" content="https://vanifruzhi.com/repert.html"> <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vanifruzhi">
+
+    <link rel="icon" href="vfz.ico">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="repert.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+ 
+<body> 
+
+    <header class="header">   
+      <div class="logo-container"> 
+          <a class="a__logo" href="index.html">Vanifruzhi</a>
+          <p class="slogan">La Gran Biblioteca de la Animación Olvidada</p>
+      </div>
+          
+      <nav class="nav-bar">
+         <ul>
+            <li><a class="a__nav" href="index.html">Inicio</a></li>
+            <li><a class="a__nav" href="00S.html">Animes del fansub</a></li>
+            <li><a class="active" href="repert.html">Repertorio</a></li>
+            <li><a class="a__nav" href="raws.html">Raws</a></li>
+            <li><a class="a__nav" href="construccion.html">Hentai</a></li>
+         </ul>          
+      </nav>
+
+      <input type="text" id="busqueda" placeholder="Buscar en la biblioteca..." />
+      <div id="resultados"></div>
+    </header>
+
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterSelection('all')">Todos</button>
+        
+        <button class="filter-btn" onclick="filterSelection('shonen')">Shonen</button>
+        <button class="filter-btn" onclick="filterSelection('shojo')">Shojo</button>
+        <button class="filter-btn" onclick="filterSelection('seinen')">Seinen</button>
+        <button class="filter-btn" onclick="filterSelection('josei')">Josei</button>
+        <button class="filter-btn" onclick="filterSelection('kodomo')">Kodomo</button>
+        
+        <button class="filter-btn" onclick="filterSelection('60s')">60s</button>
+        <button class="filter-btn" onclick="filterSelection('70s')">70s</button>
+        <button class="filter-btn" onclick="filterSelection('80s')">80s</button>
+        <button class="filter-btn" onclick="filterSelection('90s')">90s</button>
+        <button class="filter-btn" onclick="filterSelection('00s')">00s</button>
+    </div>
+
+   <div class="grid__container">
+
+        <a class="a__img category-shojo category-00s" href="ver.html?id=lovely-complex"><img src="https://pbs.twimg.com/media/Gbt9SQWWsBwRYpL?format=jpg&name=large" class="grid__item"><span class="overlay-title">Lovely Complex</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=mankatsu"><img src="https://pbs.twimg.com/media/GblExdLXUAEQ2Qt?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Monkey Punch: Manga Katsudou Daishashin</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=koume-chan-ga-iku!"><img src="https://pbs.twimg.com/media/Gd83jCgXYAA6bkT?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Koume-chan ga Iku!</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=muerdeme-camaleon!"><img src="https://pbs.twimg.com/media/GbkfsxFXMAAw5Xo?format=jpg&name=medium" class="grid__item"><span class="overlay-title">¡Muérdeme, Camaleón!</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=nozomi-witches"><img src="https://pbs.twimg.com/media/GbkdRj4W8AAKho3?format=jpg&name=large" class="grid__item"><span class="overlay-title">Nozomi Witches</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=bad-boys"><img src="https://pbs.twimg.com/media/GbkgL3sXYAE_F3x?format=jpg&name=small" class="grid__item"><span class="overlay-title">Bad Boys</span></a>
+
+        <a class="a__img category-shojo category-90s" href="ver.html?id=megami-paradise"><img src="https://pbs.twimg.com/media/GbkcjUFXwAAtQv4?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Megami Paradise</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=mikeneko-holmes-no-yuurei-joushu"><img src="https://pbs.twimg.com/media/GbkgjgMXUAA5woh?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Mikeneko Holmes</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=kyukyoku-chojin-r"><img src="https://pbs.twimg.com/media/GbkhEcMW0AAZcyn?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Kyūkyoku Chōjin R</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=burning-blood"><img src="https://pbs.twimg.com/media/GbkjLHcWkAA06fy?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Burning Blood</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=hareluya-boy"><img src="https://pbs.twimg.com/media/GbknATyWQAAugDR?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Hareluya II Boy</span></a>
+
+        <a class="a__img category-shojo category-movie category-90s" href="ver.html?id=gokinjo-monogatari-movie"><img src="https://pbs.twimg.com/media/GbknZ44X0AACV9J?format=jpg&name=large" class="grid__item"><span class="overlay-title">Gokinjo Monogatari La Película</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=mellow"><img src="https://pbs.twimg.com/media/Gbso9eXawAAlKke?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Mellow</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=ore-no-sora-keiji-hen"><img src="https://pbs.twimg.com/media/Gbsfv8_aMAAFwCJ?format=jpg&name=large" class="grid__item"><span class="overlay-title">Ore no Sora: Keiji-hen</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=kennedy-knights-pilot-film"><img src="https://pbs.twimg.com/media/GbsoxQmWkAwko9z?format=jpg&name=large" class="grid__item"><span class="overlay-title">Kennedy Knights Pilot Film</span></a>
+
+        <a class="a__img category-seinen category-movie category-90s" href="ver.html?id=naki-no-ryuu-hiryuu-no-shou-1991"><img src="https://pbs.twimg.com/media/Gvw2P4HWsAEzlyY?format=jpg&name=large" class="grid__item"><span class="overlay-title">Naki no Ryuu: Hiryuu no Shou (1991)</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=koiko-no-mainichi"><img src="https://pbs.twimg.com/media/GbsprMra4AA81qu?format=jpg&name=large" class="grid__item"><span class="overlay-title">Seishun Fuufu Monogatari: Koiko no Mainichi</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=aika"><img src="https://pbs.twimg.com/media/GcNwvPXXIAAFJ1y?format=jpg&name=medium" class="grid__item"><span class="overlay-title">AIKa</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=beck"><img src="https://pbs.twimg.com/media/Gbtx82aXQBESrdw?format=jpg&name=large" class="grid__item"><span class="overlay-title">Beck: Mongolian Chop Squad</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=monster"><img src="https://pbs.twimg.com/media/Gbtxp1dWwAAGZvp?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Monster</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=parasyte"><img src="https://pbs.twimg.com/media/Gbt7o-nXkBAuJQ-?format=jpg&name=large" class="grid__item"><span class="overlay-title">Parasyte: The Maxim</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=berserk"><img src="https://pbs.twimg.com/media/Gbt846HW8AER9r9?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Kenpuu Denki Berserk</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=mushishi"><img src="https://pbs.twimg.com/media/Gbt-KOoWEAE6E9M?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Mushishi</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=flcl"><img src="https://pbs.twimg.com/media/GbuBUqMWUBspHSl?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Fooly Cooly</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=lain"><img src="https://pbs.twimg.com/media/GbuCBT-W4BAeyTW?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Serial Experiments Lain</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=xxxholic"><img src="https://pbs.twimg.com/media/GbuC_zxXMAA0Ks7?format=jpg&name=large" class="grid__item"><span class="overlay-title">XxxHolic</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=madonna"><img src="https://pbs.twimg.com/media/GbuDo9nWAAYPDo5?format=jpg&name=large" class="grid__item"><span class="overlay-title">Madonna</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=golden-boy"><img src="https://pbs.twimg.com/media/GbuEsEYWUA4dtEU?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Golden Boy</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=emblen-take-2"><img src="https://pbs.twimg.com/media/GbvDot7XkAYuyNn?format=jpg&name=large" class="grid__item"><span class="overlay-title">Emblen Take 2</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=abenobashi-mahou-shoutengai"><img src="https://pbs.twimg.com/media/GcC9S8LWkAEjZ9y?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Abenobashi Mahou☆Shoutengai</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=black-magic-m-66"><img src="https://pbs.twimg.com/media/GcDBnewW4AAb_ew?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Black Magic M-66</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=california-crisis"><img src="https://pbs.twimg.com/media/GcDB9PVWUAAreCD?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">California Crisis</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=call-me-tonight"><img src="https://pbs.twimg.com/media/GcDCZ1ZXcAA5uym?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Call Me Tonight</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=digital-juice"><img src="https://pbs.twimg.com/media/GcDDBhqWwAAOHSQ?format=jpg&name=small" class="grid__item"><span class="overlay-title">Digital Juice</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=gunnm"><img src="https://pbs.twimg.com/media/GcD5Hc4WkAA3Xsz?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Battle Angel Alita</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=gantz"><img src="https://pbs.twimg.com/media/GcDDN2PWUAAslUH?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Gantz</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=hanappe-bazooka"><img src="https://pbs.twimg.com/media/GcD5hIHXEAEam-q?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Hanappe Bazooka</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=hataraki-man"><img src="https://pbs.twimg.com/media/GcD7RB1WYAAo44W?format=jpg&name=large" class="grid__item"><span class="overlay-title">Hataraki Man</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=houma-hunter-lime"><img src="https://pbs.twimg.com/media/GcD7pZ8W4AAw-1U?format=jpg&name=large" class="grid__item"><span class="overlay-title">Houma Hunter Lime</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=kirara"><img src="https://pbs.twimg.com/media/GcD-N-QWYAAbSi6?format=jpg&name=large" class="grid__item"><span class="overlay-title">Kirara</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=honoo-no-labyrinth"><img src="https://pbs.twimg.com/media/GcD-fA1XcAAuqy0?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Labyrinth of Flames</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=mask-of-zeguy"><img src="https://pbs.twimg.com/media/GcD-24GWEAAPVjR?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Unkai no Meikyuu Zeguy</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=mouse"><img src="https://pbs.twimg.com/media/GcD_qf5XQAAtB06?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Mouse</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=nekojiru-sou"><img src="https://pbs.twimg.com/media/GcEAGioWoAAJ4Mo?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Nekojiru-sou</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=ojousama-sousamou"><img src="https://pbs.twimg.com/media/GcEFGolXsAADwox?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Ojousama Sousamou</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=okusama-wa-joshikousei"><img src="https://pbs.twimg.com/media/GcEFpi0XkAAkrPf?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Okusama wa Joshikousei</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=onkyo-seimeitai-noiseman"><img src="https://pbs.twimg.com/media/GcEGIdjXEAAmC3m?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Onkyo Seimeitai Noiseman</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=akagi"><img src="https://pbs.twimg.com/media/GcEGkWdWUAAuB3D?format=jpg&name=small" class="grid__item"><span class="overlay-title">Touhai Densetsu Akagi: Yami ni Maiorita Tensai</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=rec"><img src="https://pbs.twimg.com/media/GcEG5RUW4AAsBdJ?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Rec</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=riding-bean"><img src="https://pbs.twimg.com/media/GcEHS9PWMAADPNF?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Riding Bean</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=shinpi-no-sekai-el-hazard"><img src="https://pbs.twimg.com/media/GcEHz4mXsAABbDe?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Shinpi no Sekai El-Hazard</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=koukou-tekken-den-tough"><img src="https://pbs.twimg.com/media/GcEJzpNWYAAc8PB?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Shootfighter Tekken</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=mudazumo-naki-kaikaku-the-legend-of-koizumi"><img src="https://pbs.twimg.com/media/GcNu6EAWcAAEsMd?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Mudazumo Naki Kaikaku: The Legend of Koizumi</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=the-samurai"><img src="https://pbs.twimg.com/media/GcNvaMjWIAAuJdO?format=jpg&name=small" class="grid__item"><span class="overlay-title">The Samurai</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=trava-fist-planet"><img src="https://pbs.twimg.com/media/GcNv_uBW8AAnOwx?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Trava: Fist Planet</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=kyoufu-no-bio-ningen-saishuu-kyoushi"><img src="https://pbs.twimg.com/media/GcNwRYdXgAA7R9L?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Kyoufu no Bio Ningen Saishuu Kyoushi</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=usagi-chan-de-cue!!"><img src="https://pbs.twimg.com/media/GcNwgKGXYAAoQHe?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Usagi-chan de Cue!!</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=one-outs"><img src="https://pbs.twimg.com/media/Gv5-AloXcAABNm0?format=png&name=large" class="grid__item"><span class="overlay-title">One Outs</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=tenjou-tenge"><img src="https://pbs.twimg.com/media/Gv5-iSwXcAEST4x?format=png&name=large" class="grid__item"><span class="overlay-title">Tenjou Tenge</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=hyper-police"><img src="https://pbs.twimg.com/media/Gv6Bj5LX0AAhYXz?format=png&name=large" class="grid__item"><span class="overlay-title">Hyper Police</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=ryuusei-sentai-musumet"><img src="https://pbs.twimg.com/media/Gv6CdjRXwAAfTEb?format=png&name=medium" class="grid__item"><span class="overlay-title">Ryuusei Sentai Musumet</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=buttobi!!-cpu"><img src="https://pbs.twimg.com/media/Gv6EpyxXQAA-iWt?format=png&name=large" class="grid__item"><span class="overlay-title">Buttobi!! CPU</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=bokura-wa-minna-kawai-sou"><img src="https://pbs.twimg.com/media/Gv6FALEWkAAaVdD?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Bokura wa Minna Kawai-sou</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=kyoukasho-ni-nai!"><img src="https://pbs.twimg.com/media/Gv6MSM6XAAEnANk?format=png&name=large" class="grid__item"><span class="overlay-title">Kyoukasho ni Nai!</span></a>
+
+        <a class="a__img category-seinen category-80s" href="ver.html?id=maison-ikkoku"><img src="https://pbs.twimg.com/media/Gv6Mw6NXgAADn2s?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Maison Ikkoku</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=master-keaton"><img src="https://pbs.twimg.com/media/Gv6NoR9WEAAR_ED?format=png&name=large" class="grid__item"><span class="overlay-title">Master Keaton</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=spirit-of-wonder-china-san-tanpenshuu"><img src="https://pbs.twimg.com/media/GwQHJtpWgAA_Jfm?format=png&name=medium" class="grid__item"><span class="overlay-title">Spirit of Wonder: China-san Tanpenshuu</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=sakura-tsuushin"><img src="https://pbs.twimg.com/media/Gv6SRXaWYAARGZ8?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Sakura Tsuushin</span></a>
+
+        <a class="a__img category-seinen category-90s" href="ver.html?id=ike!-ina-chuu-takkyuu-bu"><img src="https://pbs.twimg.com/media/GuwrrSTXAAICgtZ?format=png&name=small" class="grid__item"><span class="overlay-title">Ike! Ina-chuu Takkyuu-bu</span></a>
+
+        <a class="a__img category-seinen category-00s" href="ver.html?id=gun-frontier"><img src="https://pbs.twimg.com/media/GbuBrOiWEAkVj74?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Gun Frontier</span></a>
+
+
+
+
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=school-rumble"><img src="https://pbs.twimg.com/media/Gbtyj1CWICIGole?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">School Rumble</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=gto"><img src="https://pbs.twimg.com/media/Gbt8EeEWUAMFsP8?format=jpg&name=large" class="grid__item"><span class="overlay-title">Great Teacher Onizuka</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=shonan-junai-gumi"><img src="https://pbs.twimg.com/media/Gbt8hSfWMAMwqLM?format=jpg&name=large" class="grid__item"><span class="overlay-title">Shonan Junai Gumi!</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=get-backers"><img src="https://pbs.twimg.com/media/Gbt9xDjXYA4BZWJ?format=jpg&name=large" class="grid__item"><span class="overlay-title">Get Backers</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=trigun"><img src="https://pbs.twimg.com/media/GbuCqeZWYA403Bl?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Trigun</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=abashiri-ikka"><img src="https://pbs.twimg.com/media/GbuFYKgXUAQuqNQ?format=jpg&name=large" class="grid__item"><span class="overlay-title">Abashiri Ikka</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=kyou-kara-ore-wa"><img src="https://pbs.twimg.com/media/GbvD40PXQAM7qar?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Kyou Kara Ore Wa!!</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=death-note"><img src="https://pbs.twimg.com/media/GbvEIFsX0AkQ1Zu?format=jpg&name=large" class="grid__item"><span class="overlay-title">Death Note</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=angel-densetsu"><img src="https://pbs.twimg.com/media/GbvEYZ7WMAkC0lm?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Angel Densetsu</span></a>
+
+        <a class="a__img category-shonen category-80s" href="ver.html?id=cleopatra-dc"><img src="https://pbs.twimg.com/media/GbvEunWXYBINtiF?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Cleopatra DC</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=aoki-densetsu-shoot!"><img src="https://pbs.twimg.com/media/GcC-w77WgAAFVaT?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Aoki Densetsu Shoot!</span></a>
+
+        <a class="a__img category-shonen category-70s" href="ver.html?id=ashita-no-eleven-tachi"><img src="https://pbs.twimg.com/media/GcC_BMqWoAA7c3B?format=jpg&name=small" class="grid__item"><span class="overlay-title">Ashita no Eleven Tachi</span></a>
+
+        <a class="a__img category-shonen category-80s" href="ver.html?id=assemble-insert"><img src="https://pbs.twimg.com/media/GcC_pqLWMAATDsy?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Assemble Insert</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=azusa-otetsudai-shimasu!"><img src="https://pbs.twimg.com/media/GcDBd8uWUAAXrEg?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Azusa, Otetsudai Shimasu!</span></a>
+
+        <a class="a__img category-shonen category-80s" href="ver.html?id=bari-bari-densetsu-1987"><img src="https://pbs.twimg.com/media/GcDBQVwWkAAN67G?format=jpg&name=small" class="grid__item"><span class="overlay-title">Bari Bari Densetsu (1987)</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=danshi-koukousei-no-nichijou"><img src="https://pbs.twimg.com/media/GcD6gElXsAA_5Nm?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Danshi Koukousei no Nichijou</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=heavy"><img src="https://pbs.twimg.com/media/GcD8BP2WsAAWfpH?format=jpg&name=large" class="grid__item"><span class="overlay-title">Heavy</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=sakigake!!-cromartie-koukou"><img src="https://pbs.twimg.com/media/GcD8mO4WsAAHZE5?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Cromartie High School</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=jungle-de-ikou!"><img src="https://pbs.twimg.com/media/GcD87a2WYAAQEDy?format=jpg&name=large" class="grid__item"><span class="overlay-title">Jungle de Ikou!</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=master-mosquiton"><img src="https://pbs.twimg.com/media/GcD_LKSWMAA79bV?format=jpg&name=large" class="grid__item"><span class="overlay-title">Master Mosquiton</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=mazinkaiser"><img src="https://pbs.twimg.com/media/GcD_c19XoAAR39x?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Mazinkaiser</span></a>
+
+        <a class="a__img category-shonen category-80s" href="ver.html?id=O1-pound-no-fukuin"><img src="https://pbs.twimg.com/media/GcEF5A3XEAAsFGm?format=jpg&name=small" class="grid__item"><span class="overlay-title">One Pound Gospel</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=koukou-butouden-crows"><img src="https://pbs.twimg.com/media/GcEHg2nXAAAWyVK?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Koukou Butouden Crows</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=shoubushi-densetsu-tetsuya"><img src="https://pbs.twimg.com/media/GcEMf6BXQAAOYu2?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Shoubushi Densetsu Tetsuya</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=teizokurei-daydream"><img src="https://pbs.twimg.com/media/GcNuKHSWUAExhDx?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Teizokurei Daydream</span></a>
+
+        <a class="a__img category-shonen category-80s" href="ver.html?id=terra-e"><img src="https://pbs.twimg.com/media/GcNuppxWMAEDWBV?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Terra e...</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=ufo-princess-valkyrie"><img src="https://pbs.twimg.com/media/Gv58XldW0AAv9lD?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">UFO Princess Valkyrie</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=tattoon-master"><img src="https://pbs.twimg.com/media/Gv59PcNWUAAG6_f?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Tattoon Master</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=miami-guns"><img src="https://pbs.twimg.com/media/Gv59nKHX0AAH7kF?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Miami Guns</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=i-my-me!-strawberry-eggs"><img src="https://pbs.twimg.com/media/Gv5_TiFXIAAUXjO?format=png&name=large" class="grid__item"><span class="overlay-title">I My Me! Strawberry Eggs</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=moldiver"><img src="https://pbs.twimg.com/media/Gv5_4wDW0AAM1fJ?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Moldiver</span></a>
+
+        <a class="a__img category-shonen category-70s" href="ver.html?id=ashita-no-joe"><img src="https://pbs.twimg.com/media/Gv6BFIYXEAAuaNX?format=png&name=900x900" class="grid__item"><span class="overlay-title">Ashita no Joe</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=koutetsu-tenshi-kurumi"><img src="https://pbs.twimg.com/media/Gv6GuWlW8AAQ9p2?format=png&name=900x900" class="grid__item"><span class="overlay-title">Steel Angel Kurumi</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=rakushou!-hyper-doll"><img src="https://pbs.twimg.com/media/Gv6HhgEWQAA89On?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Rakushou! Hyper Doll</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=air-gear"><img src="https://pbs.twimg.com/media/Gv6H7yfXUAEXzzj?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Air Gear</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=power-dolls"><img src="https://pbs.twimg.com/media/Gv6IXyDXMAA7tzj?format=png&name=medium" class="grid__item"><span class="overlay-title">Power Dolls</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=solty-rei"><img src="https://pbs.twimg.com/media/Gv6N8C4XkAEri-C?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Solty Rei</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=s-cry-ed"><img src="https://pbs.twimg.com/media/Gv6OyWXX0AAYKrI?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Scryed</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=muteki-kanban-musume"><img src="https://pbs.twimg.com/media/Gv6RpA3XgAAEVtm?format=png&name=medium" class="grid__item"><span class="overlay-title">Muteki Kanban Musume</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=mushrambo"><img src="https://pbs.twimg.com/media/Gv6Squ3XkAAuB00?format=png&name=large" class="grid__item"><span class="overlay-title">Mushrambo</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=bakuretsu-hunters"><img src="https://pbs.twimg.com/media/Gv6THRyXMAAAMeb?format=png&name=large" class="grid__item"><span class="overlay-title">Bakuretsu Hunters</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=vandread"><img src="https://pbs.twimg.com/media/Gv6TkXQWsAA8orH?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Vandread</span></a>
+
+        <a class="a__img category-shonen category-90s" href="ver.html?id=kenyuu-densetsu-yaiba"><img src="https://pbs.twimg.com/media/Gv6T5RXWYAAuI2j?format=png&name=large" class="grid__item"><span class="overlay-title">Kenyuu Densetsu Yaiba</span></a>
+
+        <a class="a__img category-shonen category-00s" href="ver.html?id=bobobo-bo-bo-bobo"><img src="https://pbs.twimg.com/media/GwVXD-CWgAI4TD6?format=jpg&name=large" class="grid__item"><span class="overlay-title">Bobobo-bo Bo-bobo</span></a>
+
+        <a class="a__img category-josei category-00s" href="ver.html?id=nana"><img src="https://pbs.twimg.com/media/GbtujYJWcBc2Y75?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Nana</span></a>
+
+        <a class="a__img category-josei category-00s" href="ver.html?id=paradise-kiss"><img src="https://pbs.twimg.com/media/GcEGWJKWgAAf0M-?format=jpg&name=large" class="grid__item"><span class="overlay-title">Paradise Kiss</span></a>
+
+        <a class="a__img category-josei category-00s" href="ver.html?id=sakamichi-no-apollon"><img src="https://pbs.twimg.com/media/GbuEAMxWAAkbkgb?format=jpg&name=large" class="grid__item"><span class="overlay-title">Sakamichi No Apollon</span></a>
+
+        <a class="a__img category-josei category-00s" href="ver.html?id=gokusen"><img src="https://pbs.twimg.com/media/GbuEWM1W8BoaP2k?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Gokusen</span></a>
+
+        <a class="a__img category-josei category-00s" href="ver.html?id=nodame-cantabile"><img src="https://pbs.twimg.com/media/GbvEk69W4AsvlGB?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Nodame Cantabile</span></a>
+
+        <a class="a__img category-kodomo category-00s" href="ver.html?id=animal-crossing"><img src="https://pbs.twimg.com/media/GcD64xyWwAAjDTa?format=jpg&name=large" class="grid__item"><span class="overlay-title">Doubutsu no Mori</span></a>
+
+        <a class="a__img category-kodomo category-90s" href="ver.html?id=tobira-wo-akete-1995"><img src="https://pbs.twimg.com/media/GcNvtS9XcAAak23?format=jpg&name=900x900" class="grid__item"><span class="overlay-title">Tobira wo Akete 1995</span></a>
+
+        <a class="a__img category-kodomo category-80s" href="ver.html?id=meitantei-holmes"><img src="https://pbs.twimg.com/media/Gv6NSV4W0AASTIw?format=png&name=4096x4096" class="grid__item"><span class="overlay-title">Meitantei Holmes</span></a>
+
+        <a class="a__img category-shojo category-00s" href="ver.html?id=banana-fish"><img src="https://pbs.twimg.com/media/Gbt-f6AXIBAdd8p?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Banana Fish</span></a> 
+
+        <a class="a__img category-shojo category-80s" href="ver.html?id=ai-shite-night"><img src="https://pbs.twimg.com/media/GcC-g_AXIAAscvt?format=jpg&name=large" class="grid__item"><span class="overlay-title">Aishite Knight</span></a>
+
+        <a class="a__img category-shojo category-80s" href="ver.html?id=igano-kabamaru"><img src="https://pbs.twimg.com/media/GcD8X-pXAAAO7Pz?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Igano Kabamaru</span></a>
+
+        <a class="a__img category-shojo category-00s" href="ver.html?id=kaichou-wa-maid-sama!"><img src="https://pbs.twimg.com/media/GcD9-_WWMAAtTWh?format=jpg&name=large" class="grid__item"><span class="overlay-title">Kaichou wa Maid-sama!</span></a>
+
+        <a class="a__img category-shojo category-80s" href="ver.html?id=nayuta"><img src="https://pbs.twimg.com/media/GcD_2BxXkAAuDY5?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Nayuta</span></a>
+
+        <a class="a__img category-shojo category-90s" href="ver.html?id=sukeban-deka"><img src="https://pbs.twimg.com/media/GcEMxUsX0AA4fwk?format=jpg&name=large" class="grid__item"><span class="overlay-title">Sukeban Deka</span></a> 
+
+        <a class="a__img category-shojo category-90s" href="ver.html?id=tenshi-nanka-ja-nai"><img src="https://pbs.twimg.com/media/GcNuY6JXIAACSvE?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Tenshi Nanka ja Nai</span></a>
+
+        <a class="a__img category-shojo category-80s" href="ver.html?id=hikari-no-densetsu"><img src="https://pbs.twimg.com/media/GcNxD68WAAA4bfC?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Hikari no Densetsu</span></a>
+
+        <a class="a__img category-shojo category-70s" href="ver.html?id=ace-wo-nerae!"><img src="https://pbs.twimg.com/media/Gv6AY_EXEAAEjj4?format=png&name=small" class="grid__item"><span class="overlay-title">Ace wo Nerae!</span></a>
+
+        <a class="a__img category-shojo category-00s" href="ver.html?id=peach-girl"><img src="https://pbs.twimg.com/media/Gv6B8akWIAA3Zho?format=png&name=large" class="grid__item"><span class="overlay-title">Peach Girl</span></a>
+
+        <a class="a__img category-shojo category-00s" href="ver.html?id=yamato-nadeshiko-shichihenge"><img src="https://pbs.twimg.com/media/Gv6DAFhWwAEkumZ?format=png&name=large" class="grid__item"><span class="overlay-title">Yamato Nadeshiko</span></a>
+
+        <a class="a__img category-shojo category-90s" href="ver.html?id=shoujo-kakumei-utena"><img src="https://pbs.twimg.com/media/GwVW6prWcAEvrQe?format=jpg&name=large" class="grid__item"><span class="overlay-title">Shoujo Kakumei Utena</span></a>
+
+        <a class="a__img category-shojo category-90s" href="ver.html?id=corrector-yui"><img src="https://pbs.twimg.com/media/GcDCyTUW8AA6wZn?format=jpg&name=4096x4096" class="grid__item"><span class="overlay-title">Corrector Yui</span></a>
+
+        <a class="a__img category-shonen category-70s" href="ver.html?id=pat"><img src="https://pbs.twimg.com/media/GeAdNVMWIAAOfWk?format=png&name=small" class="grid__item"><span class="overlay-title">Yakyuukyou no Uta</span></a>
+
+        <a class="a__img category-shonen category-80s" href="ver.html?id=batsu-and-terry"><img src="https://pbs.twimg.com/media/G6zc62yXAAAB_Y4?format=png&name=large" class="grid__item"><span class="overlay-title">Batsu & Terry</span></a>
+
+        <a class="a__img category-shojo category-70s" href="ver.html?id=haikara-san-ga-tooru-1978"><img src="https://pbs.twimg.com/media/G6zc33WWwAA87vD?format=jpg&name=medium" class="grid__item"><span class="overlay-title">Haikara-san ga Tooru 1978</span></a>
+    
+   </div>
+
+   <a href="#" class="back-to-top"></a>
+
+   <footer class="footer">
+        <p class="p__footer">Ningún video se encuentra alojado en nuestros servidores. Todos los vídeos enlazados son tomados de internet, enlaces y sitios webs gratuitos.</p>
+      
+        <div class="social-icons">
+            <a class="a__footer footer__link" href="https://www.facebook.com/profile.php?id=61560876430026" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="a__footer footer__link" href="https://twitter.com/vanifruzhi" target="_blank" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i> 
+            </a>
+            <a class="a__footer footer__link" href="https://www.youtube.com/@watafruzhi" target="_blank" aria-label="Youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a class="a__footer footer__link" href="contact.html" target="_blank" aria-label="Contacto">
+                <i class="fa-solid fa-envelope-open-text"></i> 
+            </a>
+        </div>
+        
+        <a class="a__footer" href="dattes.html">Acerca de Vanifruzhi</a> 
+
+        <i class="i__footer">
+            ©2019 - <span id="year"></span> Copyright: Vanifruzhi (v5.0)
+        </i>
+
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+
+   <script>
+       
+       function filterSelection(c) {
+           var x, i;
+           x = document.getElementsByClassName("a__img");
+           if (c == "all") c = "";
+           
+           
+           for (i = 0; i < x.length; i++) {
+               removeClass(x[i], "show");
+               if (x[i].className.indexOf(c) > -1) {
+                   addClass(x[i], "show");
+                   x[i].style.display = "block"; 
+               } else {
+                   x[i].style.display = "none"; 
+               }
+           }
+
+           
+           var btns = document.getElementsByClassName("filter-btn");
+           for (i = 0; i < btns.length; i++) {
+               btns[i].classList.remove("active");
+               var categoriaBoton = c === "" ? "all" : c;
+               if (btns[i].getAttribute("onclick").includes("'" + categoriaBoton + "'")) {
+                   btns[i].classList.add("active");
+               }
+           }
+       }
+
+       
+       function addClass(element, name) {
+           var i, arr1, arr2;
+           arr1 = element.className.split(" ");
+           arr2 = name.split(" ");
+           for (i = 0; i < arr2.length; i++) {
+               if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+           }
+       }
+
+       function removeClass(element, name) {
+           var i, arr1, arr2;
+           arr1 = element.className.split(" ");
+           arr2 = name.split(" ");
+           for (i = 0; i < arr2.length; i++) {
+               while (arr1.indexOf(arr2[i]) > -1) {
+                   arr1.splice(arr1.indexOf(arr2[i]), 1);     
+               }
+           }
+           element.className = arr1.join(" ");
+       }
+
+       
+       function updateCounts() {
+           var allItems = document.getElementsByClassName("a__img");
+           var btns = document.getElementsByClassName("filter-btn");
+
+           for (var i = 0; i < btns.length; i++) {
+               var btn = btns[i];
+               var category = btn.getAttribute("onclick").split("'")[1];
+               var count = 0;
+
+               if (category === 'all') {
+                   count = allItems.length;
+               } else {
+                   for (var j = 0; j < allItems.length; j++) {
+                       if (allItems[j].className.indexOf("category-" + category) > -1) {
+                           count++;
+                       }
+                   }
+               }
+
+               if (!btn.getAttribute("data-original-text")) {
+                   btn.setAttribute("data-original-text", btn.innerText);
+               }
+               
+               var originalText = btn.getAttribute("data-original-text");
+               
+               btn.innerHTML = originalText + ' <span class="count-badge">(' + count + ')</span>';
+           }
+       }
+
+       
+       document.addEventListener("DOMContentLoaded", function() {
+           
+           
+           const params = new URLSearchParams(window.location.search);
+           const categoriaUrl = params.get('cat');
+
+           
+           if (categoriaUrl) {
+               filterSelection(categoriaUrl);
+           } else {
+               filterSelection("all");
+           }
+           
+           
+           updateCounts(); 
+       });
+   </script>
+   
+   <script src="js/animes.js"></script> 
+   <script src="js/main.js" defer></script>
+  
+</body>
+</html>

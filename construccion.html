@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Construcción - Vanifruzhi</title>
+    <meta name="theme-color" content="#e812be">
+    <link rel="icon" href="vfz.ico">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+       
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+     <style>
+        body {
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+            background: #000; 
+            color: #fff; 
+            margin: 0; 
+        }
+
+        .construct-container {
+            flex-grow: 1; 
+            display: flex; 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            padding: 30px 20px; 
+            text-align: center;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+
+        .construct-title {
+            font-family: 'Delicious Handrawn', cursive;
+            font-size: 80px; 
+            color: #e812be; 
+            line-height: 1; 
+            margin: 0;
+            text-shadow: 4px 4px 0px #fff; 
+            max-width: 100%;
+            word-wrap: break-word; 
+        }
+
+        .img-wrapper {
+            margin: 25px 0;
+            padding: 10px 10px 40px 10px; 
+            background: #fff; 
+            border-radius: 4px;
+            box-shadow: 0 0 30px rgba(232, 18, 190, 0.3); 
+            transform: rotate(2deg); 
+            animation: flotar 4s ease-in-out infinite; 
+            
+           
+            max-width: 250px; 
+            width: 100%; 
+            
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .img-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px; 
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .construct-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .text-area {
+            font-family: 'Patrick Hand', cursive;
+            margin-top: 15px;
+            padding: 0 10px; 
+        }
+
+        .text-area h2 {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        
+        .text-area p {
+            font-family: 'Nunito', sans-serif; 
+            font-size: 1.2rem; 
+            color: #ccc;
+            max-width: 600px;
+            line-height: 1.4;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-home {
+            margin-top: 25px;
+            padding: 10px 30px; 
+            background: #e812be; 
+            color: #fff;
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold;
+            font-family: 'Nunito', sans-serif; 
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: 2px solid #e812be;
+            box-shadow: 0 4px 15px rgba(232, 18, 190, 0.4);
+            display: inline-block; 
+        }
+
+        .btn-home:hover { 
+            background: transparent; 
+            color: #e812be; 
+            transform: translateY(-3px); 
+        }
+
+        @keyframes flotar {
+            0% { transform: rotate(2deg) translateY(0px); }
+            50% { transform: rotate(2deg) translateY(-8px); }
+            100% { transform: rotate(2deg) translateY(0px); }
+        }
+
+        
+        @media (max-width: 768px) {
+            .construct-title {
+                font-size: 3.5rem; 
+                text-shadow: 2px 2px 0px #fff; 
+            }
+
+            .img-wrapper {
+                
+                max-width: 220px; 
+                margin: 20px 0;
+            }
+
+            .text-area h2 {
+                font-size: 1.8rem; 
+            }
+
+            .text-area p {
+                font-size: 1rem; 
+            }
+            
+            .btn-home {
+                width: 70%; 
+                padding: 12px 0; 
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .construct-title {
+                font-size: 2.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">   
+       <div class="logo-container"> 
+            <a class="a__logo" href="index.html">Vanifruzhi</a>
+            <p class="slogan">La Gran Biblioteca de la Animación Olvidada</p>
+       </div>
+
+      <nav class="nav-bar">
+         <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a class="a__nav" href="00S.html">Animes del fansub</a></li>
+            <li><a class="a__nav" href="repert.html">Repertorio</a></li>
+            <li><a class="a__nav" href="raws.html">Raws</a></li>
+            <li><a class="a__nav" href="construccion.html">Hentai</a></li>
+         </ul>          
+      </nav>
+      <input type="text" id="busqueda" placeholder="Buscar..." />
+      <div id="resultados"></div>
+    </header>
+
+    <div class="construct-container">
+        <h1 class="construct-title">EN CONSTRUCCIÓN</h1>
+        
+        <div class="img-wrapper">
+            <img src="https://pbs.twimg.com/media/G7ShtiFXkAApc-n?format=jpg&name=medium" class="construct-img" alt="Winry trabajando duro en el servidor">
+        </div>
+        
+        <div class="text-area">
+            <h2>¡Estamos cocinando esta sección!</h2>
+            <p>
+                Estamos configurando los servidores y clasificando el material. <br>
+                (Hasta el ratón del fondo está ayudando con el código).
+            </p>
+            <p style="font-size: 1rem; color: #888; margin-top: 10px;">
+                <i class="fa-solid fa-triangle-exclamation"></i> Zona en construcción. Usa casco ⛑️ nwn.
+            </p>
+        </div>
+
+        <a href="index.html" class="btn-home"><i class="fa-solid fa-person-digging"></i> Volver a zona segura</a>
+    </div>
+
+   <footer class="footer">
+        <p class="p__footer">Ningún video se encuentra alojado en nuestros servidores. Todos los vídeos enlazados son tomados de internet, enlaces y sitios webs gratuitos.</p>
+
+        <div class="social-icons">
+            <a class="a__footer footer__link" href="https://www.facebook.com/profile.php?id=61560876430026" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="a__footer footer__link" href="https://twitter.com/vanifruzhi" target="_blank" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i> 
+            </a>
+            <a class="a__footer footer__link" href="https://www.youtube.com/@watafruzhi" target="_blank" aria-label="Youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a class="a__footer footer__link" href="contact.html" target="_blank" aria-label="Contacto">
+                <i class="fa-solid fa-envelope-open-text"></i> 
+            </a>
+        </div>
+        
+        <a class="a__footer" href="dattes.html">Acerca de Vanifruzhi</a> 
+
+        <i class="i__footer">
+            ©2019 - <span id="year"></span> Copyright: Vanifruzhi (v5.0)
+        </i>
+
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <script src="js/animes.js"></script> 
+    <script src="js/main.js" defer></script>
+
+</body> 
+</html>

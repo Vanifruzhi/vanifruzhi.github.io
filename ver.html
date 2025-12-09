@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e812be">
+
+    <title>Cargando anime... - Vanifruzhi</title>
+
+    <meta name="description" content="Descarga animes retro en Vanifruzhi Fansub.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Vanifruzhi Fansub">
+    <meta property="og:description" content="La Gran Biblioteca de la Animación Olvidada">
+    <meta property="og:image" content="https://pbs.twimg.com/media/Gbiy7S_XYAATBEP?format=png&name=large"> <meta property="og:url" content="https://vanifruzhi.com/">
+    <meta property="og:type" content="video.movie">
+
+    <link rel="icon" href="vfz.ico">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@600&family=Gloria+Hallelujah&family=Volkhov&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+ 
+<body> 
+    <header class="header">   
+       <div class="logo-container"> 
+          <a class="a__logo" href="index.html">Vanifruzhi</a>
+          <p class="slogan">La Gran Biblioteca de la Animación Olvidada</p>
+      </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="00S.html">Animes del fansub</a></li>
+                <li><a href="repert.html">Repertorio</a></li>
+                <li><a href="raws.html">Raws</a></li>
+                <li><a href="construccion.html">Hentai</a></li>
+            </ul>          
+        </nav>
+        <input type="text" id="busqueda" placeholder="Buscar..." />
+        <div id="resultados"></div>
+    </header>
+
+    <script> 
+        const hamburger = document.querySelector(".hamburger"); 
+        if(hamburger){
+            hamburger.onclick = function() {
+                document.querySelector(".nav-bar").classList.toggle("active");
+            } 
+        }
+    </script>
+
+    <h1 class="title" id="titulo">Cargando...</h1>
+    <img class="portada__img" id="portada" src="" width="1000" height="600">
+        
+    <article class="article">
+        <img class="sinopsis__img" id="img-header-sinopsis" src="" width="333" height="100">          
+        <p class="sinopsis__p"><b><i class="text__sinopsis" id="sinopsis"></i></b></p>                         
+    </article>
+
+    <div class="article2">
+        <img class="ficha-tecnica__img" id="img-header-ficha" src="" width="333" height="100">
+        <div class="ficha-tecnica__div" id="lista-ficha"></div>
+    </div>
+
+    <div class="article3">
+        <img class="capturas__img" id="img-header-capturas" src="" width="333" height="100">
+        <img class="frames__img" id="capturas" src=""> 
+        <img class="descargas__img" id="img-header-descargas" src="" width="400" height="100"> 
+    </div>
+
+    <div id="contenedor-descargas" style="margin-bottom: 50px;"></div>
+
+    <div id="disqus_thread" style="width: 90%; max-width: 800px; margin: 0 auto 50px auto;"></div>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <p class="p__footer">Ningún video se encuentra alojado en nuestros servidores. Todos los vídeos enlazados son tomados de internet, enlaces y sitios webs gratuitos.</p>
+      
+      <div class="social-icons">
+        <a class="a__footer footer__link" href="https://www.facebook.com/profile.php?id=61560876430026" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="a__footer footer__link" href="https://twitter.com/vanifruzhi" target="_blank" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i> </a>
+        <a class="a__footer footer__link" href="https://www.youtube.com/@watafruzhi" target="_blank" aria-label="Youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a class="a__footer footer__link" href="contact.html" target="_blank" aria-label="Contacto">
+            <i class="fa-solid fa-envelope-open-text"></i> </a>
+    </div>
+        <a class="a__footer" href="dattes.html">Acerca de Vanifruzhi</a>
+      
+
+        <i class="i__footer">
+    ©2019 - <span id="year"></span> Copyright: Vanifruzhi (v5.0)
+</i>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+        
+    </footer>
+
+    <script src="js/animes.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            
+            if(typeof recursos !== 'undefined') {
+                document.getElementById('img-header-sinopsis').src = recursos.sinopsisHeader;
+                document.getElementById('img-header-ficha').src = recursos.fichaHeader;
+                document.getElementById('img-header-capturas').src = recursos.capturasHeader;
+                document.getElementById('img-header-descargas').src = recursos.descargasHeader;
+            }
+
+            
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            
+            
+            const anime = (typeof dbAnimes !== 'undefined') ? dbAnimes[id] : null;
+
+            
+            function updateMeta(name, content) {
+                let element = document.querySelector(`meta[name="${name}"]`);
+                if (!element) {
+                    element = document.createElement('meta');
+                    element.name = name;
+                    document.head.appendChild(element);
+                }
+                element.content = content;
+            }
+            
+            function updateOG(property, content) {
+                let element = document.querySelector(`meta[property="${property}"]`);
+                if (!element) {
+                    element = document.createElement('meta');
+                    element.setAttribute('property', property);
+                    document.head.appendChild(element);
+                }
+                element.content = content;
+            }
+
+            
+            if (anime) {
+                
+
+document.title = `Descargar ${anime.titulo} [Sub Español] Completo - Vanifruzhi`;
+
+
+document.getElementById('titulo').innerText = anime.titulo; 
+
+                const descripcionSEO = `Descarga el anime ${anime.titulo} por Mega, Drive y Mediafire. Versión Sub Español completa. Calidad garantizada por Vanifruzhi Fansub. Sinopsis: ${anime.sinopsis.substring(0, 100)}...`;
+                updateMeta('description', descripcionSEO);
+
+                updateOG('og:title', `Descargar ${anime.titulo} - Vanifruzhi`);
+                updateOG('og:description', `Mira la ficha técnica, capturas y descarga ${anime.titulo} en máxima calidad.`);
+                updateOG('og:image', anime.portada);
+                updateOG('og:url', window.location.href);
+
+                
+                document.getElementById('portada').src = anime.portada;
+                document.getElementById('sinopsis').innerHTML = anime.sinopsis;
+                document.getElementById('capturas').src = anime.capturas;
+
+                
+                const cajaFicha = document.getElementById('lista-ficha');
+                cajaFicha.innerHTML = ''; 
+                anime.ficha.forEach(dato => {
+                    const p = document.createElement('p');
+                    p.className = "ficha-tecnica__p";
+                    p.innerHTML = `<b><i>${dato}</i></b>`;
+                    cajaFicha.appendChild(p);
+                });
+
+                
+                const cajaDescargas = document.getElementById('contenedor-descargas');
+                cajaDescargas.innerHTML = ''; 
+
+                function crearBoton(linkData) {
+                    const a = document.createElement('a');
+                    a.href = linkData.url;
+                    a.target = "_blank";
+                    a.className = "download__a"; 
+                    a.style.display = "inline-block";
+                    a.style.margin = "10px";
+                    a.rel = "noopener noreferrer";
+
+                    const img = document.createElement('img');
+                    
+                    if (linkData.servidor === 'mega') {
+                        img.src = recursos.btnMega;
+                        img.className = "mega__img";
+                    } 
+                    else if (linkData.servidor === 'drive') {
+                        img.src = recursos.btnDrive;
+                        img.className = "drive__img";
+                    }
+                    else if (linkData.servidor === 'mediafire') {
+                        img.src = recursos.btnMediafire;
+                        img.className = "mediafire__img";
+                    }
+                    else if (linkData.servidor === 'terabox') {
+                        img.src = recursos.btnTerabox;
+                        img.className = "terabox__img"; 
+                    }
+                    else {
+                        img.alt = linkData.servidor;
+                    }
+                    
+                    img.width = 220; img.height = 110;
+                    img.style.objectFit = "contain"; img.style.marginBottom = "0"; 
+                    
+                    a.appendChild(img);
+                    return a;
+                }
+
+                if (anime.tipoDescarga === 'secciones') {
+                    anime.descargas.forEach(seccion => {
+                        const franja = document.createElement('h3');
+                        franja.className = 'one-part'; 
+                        franja.innerText = seccion.titulo;
+                        
+                        const divBtns = document.createElement('div');
+                        divBtns.className = 'download__div';
+                        divBtns.style.textAlign = "center";
+                        divBtns.style.marginBottom = "30px";
+
+                        seccion.links.forEach(link => {
+                            divBtns.appendChild(crearBoton(link));
+                        });
+
+                        cajaDescargas.appendChild(franja);
+                        cajaDescargas.appendChild(divBtns);
+                    });
+                } else {
+                    const divBtns = document.createElement('div');
+                    divBtns.className = 'download__div';
+                    divBtns.style.textAlign = "center";
+                    
+                    anime.descargas.forEach(link => {
+                        divBtns.appendChild(crearBoton(link));
+                    });
+                    cajaDescargas.appendChild(divBtns);
+                }
+
+                
+                document.getElementById("disqus_thread").innerHTML = "";
+
+                window.disqus_config = function () {
+                    this.page.url = window.location.href;  
+                    this.page.identifier = id;             
+                };
+
+                (function() { 
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://vanifruzhi.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+
+            } else {
+                
+                
+                console.log("Anime no encontrado, redirigiendo...");
+                window.location.href = '404.html';
+            }
+
+        });
+    </script>
+
+
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('vanifruzhi', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Apóyame nwn',
+    'floating-chat.donateButton.background-color': '#e812be',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+
+
+</body> 
+</html>
