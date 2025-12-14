@@ -5650,7 +5650,7 @@ sinopsis: `
 
 ,
     "haikara-san-ga-tooru-1978": {  
-        titulo: "Haikara-san ga Tooru 1978 [Sub Español, Ruso e Inglés] [5/42]",
+        titulo: "Haikara-san ga Tooru 1978 [Sub Español, Ruso e Inglés] [10/42]",
         tituloBusqueda: "Haikara-san ga Tooru 1978",
         portada: "https://pbs.twimg.com/media/G7UhAeyX0AA_l4T?format=png&name=large",
         portadaBusqueda: "https://pbs.twimg.com/media/G6zc33WWwAA87vD?format=jpg&name=medium",
@@ -5669,7 +5669,7 @@ sinopsis: `
             "Demografía: Shōjo",
             "Género: Drama, romance, comedia",
             "Duración: 25 min por capítulo",
-            "Capítulos: 5/42",
+            "Capítulos: 10/42",
             "Resolución: 1480x1080p (BD-RIP) (SOFT-SUBS)",
             "Tamaño: N/A",
             "Audio: Japones",
@@ -5768,6 +5768,7 @@ sinopsis: `
   
         ]
     }
+
 
 
 
