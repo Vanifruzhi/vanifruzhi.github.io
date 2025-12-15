@@ -847,7 +847,7 @@ sinopsis: `
             "Género: Drama, romance, tennis",
             "Duración: 25 min por capítulo",
             "Capítulos: 26/26",
-            "Resolución: 640x480p (DVD-RIP)",
+            "Resolución: 640x480p (VHS-RIP)",
             "Tamaño: 5,93GB",
             "Audio: Español Y Japones",
             "Subs: No",
@@ -5768,7 +5768,6 @@ sinopsis: `
   
         ]
     }
-
 
 
 
