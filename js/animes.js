@@ -5488,7 +5488,7 @@ sinopsis: `
 
 ,
     "hareluya-boy": {  
-        titulo: "Hareluya II Boy [Sub Español e Inglés] [5/25]",
+        titulo: "Hareluya II Boy [Sub Español e Inglés] [10/25]",
         tituloBusqueda: "Hareluya II Boy",
         portada: "https://pbs.twimg.com/media/GdxCJ7AWwAAm2wQ?format=jpg&name=large",
         portadaBusqueda: "https://pbs.twimg.com/media/GbknATyWQAAugDR?format=jpg&name=4096x4096",
@@ -5507,7 +5507,7 @@ sinopsis: `
             "Demografía: Shōnen",
             "Género: Acción, comedia, drama",
             "Duración: 25 min por capítulo",
-            "Capítulos: 5/25",
+            "Capítulos: 10/25",
             "Resolución: 1920x1080p (VHS-RIP) (SOFT-SUBS)",
             "Tamaño: N/A",
             "Audio: Japones",
@@ -5768,6 +5768,7 @@ sinopsis: `
   
         ]
     }
+
 
 
 
