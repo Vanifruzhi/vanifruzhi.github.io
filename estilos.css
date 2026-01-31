@@ -615,3 +615,23 @@ body {
 }
 
 
+
+
+iframe[id*="kofi"], iframe[src*="ko-fi"] {
+    /* Mantenemos las esquinas redondas */
+    border-radius: 50px !important; 
+    
+    /* LA TIJERA INTELIGENTE:
+       1er número (10px) -> Corta de ARRIBA 
+       2do número (0px)  -> DERECHA 
+       3er número (10px) -> ABAJO 
+       4to número (0px)  -> IZQUIERDA 
+    */
+    -webkit-clip-path: inset(10px 0px 0px 0px round 50px) !important;
+    clip-path: inset(20px 0px 0px 0px round 50px) !important;
+    
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+
