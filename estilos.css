@@ -618,20 +618,30 @@ body {
 
 
 iframe[id*="kofi"], iframe[src*="ko-fi"] {
-    /* Mantenemos las esquinas redondas */
-    border-radius: 50px !important; 
     
-    /* LA TIJERA INTELIGENTE:
-       1er número (10px) -> Corta de ARRIBA 
-       2do número (0px)  -> DERECHA 
-       3er número (10px) -> ABAJO 
-       4to número (0px)  -> IZQUIERDA 
-    */
-    -webkit-clip-path: inset(10px 0px 0px 0px round 50px) !important;
-    clip-path: inset(20px 0px 0px 0px round 50px) !important;
+    border-radius: 50px !important;
+    
+    
+    overflow: hidden !important;
+    -ms-overflow-style: none !important;  /* Para Internet Explorer/Edge */
+    scrollbar-width: none !important;  /* Para Firefox */
+    
+    
+    min-width: 100% !important; 
+    width: auto !important;
+
     
     background: transparent !important;
     box-shadow: none !important;
 }
+
+/* 5. Ocultar scroll en Chrome, Safari y Opera */
+iframe[id*="kofi"]::-webkit-scrollbar, 
+iframe[src*="ko-fi"]::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
 
 
